@@ -1,0 +1,524 @@
+---------------------------------------------------------------
+
+[2025-12-22T09:14:14+08:00] 172.18.0.1 GET localhost:18080/
+[运行时间：9.704759s] [吞吐率：0.10req/s] [内存消耗：2,265.09kb] [文件加载：92]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /server/public/mobile/index.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:18+08:00] 172.18.0.1 GET localhost:18080/api/user/center
+[运行时间：2.842452s] [吞吐率：0.35req/s] [内存消耗：2,435.84kb] [文件加载：104]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [2]unlink(/server/runtime/cache/like_shop_/c1/2c59626ffbab5fb62a0dd7e7f07aba.php): No such file or directory[/server/thinkphp/library/think/cache/driver/File.php:304]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:19+08:00] 172.18.0.1 GET localhost:18080/api/index/config
+[运行时间：3.239239s] [吞吐率：0.31req/s] [内存消耗：3,304.86kb] [文件加载：112]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041257s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_session` [ RunTime:11.122684s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.003022s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_user` [ RunTime:0.033933s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_user` WHERE  `id` = 1  AND `del` = 0 LIMIT 1 [ RunTime:0.001742s ]
+[ sql ] [ SQL ] UPDATE `ls_session`  SET `update_time` = 1766366069 , `expire_time` = 1771550069  WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' [ RunTime:0.007364s ]
+[ sql ] [ SQL ] SELECT `u`.*,`s`.`token`,`s`.`client` FROM ls_user u INNER JOIN `ls_session` `s` ON `u`.`id`=`s`.`user_id` WHERE  `s`.`token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_config` [ RunTime:0.030759s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'register_setting'  AND `name` = 'open' LIMIT 1 [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'app'  AND `name` = 'wechat_login' LIMIT 1 [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'shop_login_logo' LIMIT 1 [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'web_favicon' LIMIT 1 [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'name' LIMIT 1 [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'copyright'  AND `name` = 'company_name' LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'copyright'  AND `name` = 'number' LIMIT 1 [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'copyright'  AND `name` = 'link' LIMIT 1 [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'app'  AND `name` = 'agreement' LIMIT 1 [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.027146s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001316s ]
+[ sql ] [ SQL ] INSERT INTO `ls_stat` (`ip` , `count` , `create_time`) VALUES ('172.18.0.1' , 1 , 1766366059) [ RunTime:0.003271s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:19+08:00] 172.18.0.1 GET localhost:18080/api/menu/lists?type=1
+[运行时间：2.995808s] [吞吐率：0.33req/s] [内存消耗：3,296.84kb] [文件加载：113]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038743s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_session` [ RunTime:11.123587s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.003225s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_user` [ RunTime:0.033903s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_user` WHERE  `id` = 1  AND `del` = 0 LIMIT 1 [ RunTime:0.003324s ]
+[ sql ] [ SQL ] UPDATE `ls_session`  SET `update_time` = 1766366069 , `expire_time` = 1771550069  WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' [ RunTime:0.009710s ]
+[ sql ] [ SQL ] SELECT `u`.*,`s`.`token`,`s`.`client` FROM ls_user u INNER JOIN `ls_session` `s` ON `u`.`id`=`s`.`user_id` WHERE  `s`.`token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_menu_decorate` [ RunTime:0.034174s ]
+[ sql ] [ SQL ] SELECT `name`,`image`,`link_type`,`link_address` FROM `ls_menu_decorate` WHERE  `decorate_type` = 1  AND `del` = 0  AND `is_show` = 1 ORDER BY `sort` DESC [ RunTime:0.001638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.031620s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.000971s ]
+[ sql ] [ SQL ] INSERT INTO `ls_stat` (`ip` , `count` , `create_time`) VALUES ('172.18.0.1' , 1 , 1766366059) [ RunTime:0.005265s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:20+08:00] 172.18.0.1 GET localhost:18080/api/goods/getBestList?page_no=1
+[运行时间：2.976065s] [吞吐率：0.34req/s] [内存消耗：3,852.56kb] [文件加载：120]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page_no' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003776s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_goods` [ RunTime:0.032424s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_goods` WHERE  `del` = 0  AND `status` = 1  AND `is_best` = 1 [ RunTime:0.002225s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,min_price as price,`market_price` FROM `ls_goods` WHERE  `del` = 0  AND `status` = 1  AND `is_best` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,15 [ RunTime:0.001229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.007400s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001163s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.003987s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:20+08:00] 172.18.0.1 GET localhost:18080/api/cart/num
+[运行时间：2.550159s] [吞吐率：0.39req/s] [内存消耗：3,268.38kb] [文件加载：110]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005237s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_cart` [ RunTime:0.057960s ]
+[ sql ] [ SQL ] SELECT SUM(`goods_num`) AS tp_sum FROM `ls_cart` `c` INNER JOIN `ls_goods` `g` ON `g`.`id`=`c`.`goods_id` INNER JOIN `ls_goods_item` `i` ON `i`.`id`=`c`.`item_id` WHERE  `c`.`user_id` = 1 [ RunTime:0.038287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.006833s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001333s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.003268s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:20+08:00] 172.18.0.1 GET localhost:18080/api/index/lists
+[运行时间：1.861311s] [吞吐率：0.54req/s] [内存消耗：3,893.66kb] [文件加载：122]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005410s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_article` [ RunTime:0.041515s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `ls_article` WHERE  `del` = 0  AND `is_notice` = 1  AND `is_show` = 1 ORDER BY `create_time` DESC LIMIT 3 [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_config` [ RunTime:0.022046s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'goods_image' LIMIT 1 [ RunTime:0.003620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_coupon` [ RunTime:0.037735s ]
+[ sql ] [ SQL ] SELECT `id`,`money`,`condition_type`,`condition_money` FROM `ls_coupon` WHERE  `del` = 0  AND `status` = 1  AND `get_type` = 1  AND `send_time_start` <= 1766366060  AND `send_time_end` >= 1766366060 ORDER BY `id` DESC LIMIT 9 [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_coupon_list` [ RunTime:0.032086s ]
+[ sql ] [ SQL ] SELECT `coupon_id` FROM `ls_coupon_list` WHERE  `del` = 0  AND `user_id` = 1 [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'shop_logo' LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_goods` [ RunTime:0.004344s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,min_price as price,`market_price`,sales_sum+virtual_sales_sum as sales_sum FROM `ls_goods` WHERE  `del` = 0  AND `status` = 1  AND `is_new` = 1 ORDER BY `id` DESC,`sort` DESC LIMIT 5 [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SELECT `value` FROM `ls_config` WHERE  `type` = 'website'  AND `name` = 'mall_logo' LIMIT 1 [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`image`,min_price as price,`market_price`,sales_sum+virtual_sales_sum as sales_sum FROM `ls_goods` WHERE  `del` = 0  AND `status` = 1 ORDER BY `sales_sum` DESC,`click_count` DESC LIMIT 5 [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.004337s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.003132s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:14:22+08:00] 172.18.0.1 GET localhost:18080/api/ad/lists?pid=1
+[运行时间：3.398402s] [吞吐率：0.29req/s] [内存消耗：3,745.16kb] [文件加载：118]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002890s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_ad` [ RunTime:0.038304s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM ls_ad a INNER JOIN `ls_ad_position` `ap` ON `a`.`pid`=`ap`.`id` WHERE  `pid` = 1  AND `ap`.`client` = 1  AND `a`.`status` = 1  AND `a`.`del` = 0  AND `ap`.`status` = 1  AND `ap`.`del` = 0 [ RunTime:0.045367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.007146s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001265s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.007341s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:17:05+08:00] 172.18.0.1 GET localhost:18080/api/cart/num
+[运行时间：2.695092s] [吞吐率：0.37req/s] [内存消耗：3,268.36kb] [文件加载：110]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005369s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_cart` [ RunTime:0.020794s ]
+[ sql ] [ SQL ] SELECT SUM(`goods_num`) AS tp_sum FROM `ls_cart` `c` INNER JOIN `ls_goods` `g` ON `g`.`id`=`c`.`goods_id` INNER JOIN `ls_goods_item` `i` ON `i`.`id`=`c`.`item_id` WHERE  `c`.`user_id` = 1 [ RunTime:0.009908s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.005829s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001111s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.006015s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:17:17+08:00] 172.18.0.1 POST localhost:18080/api/user/setWechatInfo
+[运行时间：2.804418s] [吞吐率：0.36req/s] [内存消耗：3,259.09kb] [文件加载：110]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '71',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'host' => 'localhost:18080',
+  'connection' => 'close',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, zstd',
+  'user-agent' => 'python-requests/2.32.4',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => 'lekhoideptrai',
+  'avatar' => 'file:///etc/passwd',
+  'sex' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002707s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.004460s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001299s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.006086s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:17:19+08:00] 172.18.0.1 GET localhost:18080/api/user/info
+[运行时间：2.338434s] [吞吐率：0.43req/s] [内存消耗：3,790.48kb] [文件加载：119]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'host' => 'localhost:18080',
+  'connection' => 'close',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, zstd',
+  'user-agent' => 'python-requests/2.32.4',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003097s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_user` [ RunTime:0.005250s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`sex` FROM `ls_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.005456s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.005346s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:17:25+08:00] 172.18.0.1 POST localhost:18080/api/user/setWechatInfo
+[运行时间：1.518229s] [吞吐率：0.66req/s] [内存消耗：3,259.07kb] [文件加载：110]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '70',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'host' => 'localhost:18080',
+  'connection' => 'close',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, zstd',
+  'user-agent' => 'python-requests/2.32.4',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => 'lekhoideptrai',
+  'avatar' => 'file:///etc/group',
+  'sex' => 1,
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003352s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.013331s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001792s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.007553s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:17:26+08:00] 172.18.0.1 GET localhost:18080/api/user/info
+[运行时间：1.519878s] [吞吐率：0.66req/s] [内存消耗：3,790.48kb] [文件加载：119]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'host' => 'localhost:18080',
+  'connection' => 'close',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, zstd',
+  'user-agent' => 'python-requests/2.32.4',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002172s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_user` [ RunTime:0.004467s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`sex` FROM `ls_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.004828s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001469s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.005720s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:48:36+08:00] 172.18.0.1 GET localhost:18080/api/cart/num
+[运行时间：3.176854s] [吞吐率：0.31req/s] [内存消耗：3,294.33kb] [文件加载：111]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007061s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_session` [ RunTime:0.006136s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001570s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `ls_session` WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_user` [ RunTime:0.005573s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_user` WHERE  `id` = 1  AND `del` = 0 LIMIT 1 [ RunTime:0.002071s ]
+[ sql ] [ SQL ] UPDATE `ls_session`  SET `update_time` = 1766368116 , `expire_time` = 1771552116  WHERE  `token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' [ RunTime:0.004047s ]
+[ sql ] [ SQL ] SELECT `u`.*,`s`.`token`,`s`.`client` FROM ls_user u INNER JOIN `ls_session` `s` ON `u`.`id`=`s`.`user_id` WHERE  `s`.`token` = 'f941fe7bb827035e288b3e9bf8eb7b6d' LIMIT 1 [ RunTime:0.001993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_cart` [ RunTime:0.006662s ]
+[ sql ] [ SQL ] SELECT SUM(`goods_num`) AS tp_sum FROM `ls_cart` `c` INNER JOIN `ls_goods` `g` ON `g`.`id`=`c`.`goods_id` INNER JOIN `ls_goods_item` `i` ON `i`.`id`=`c`.`item_id` WHERE  `c`.`user_id` = 1 [ RunTime:0.007106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.006288s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001196s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.006574s ]
+---------------------------------------------------------------
+
+[2025-12-22T09:51:14+08:00] 172.18.0.1 GET localhost:18080/api/cart/num
+[运行时间：2.731364s] [吞吐率：0.37req/s] [内存消耗：3,268.36kb] [文件加载：110]
+[ info ] [ LANG ] /server/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'csrftoken=FsDvjHgsj9KgJhRhQNu3ikkXe8fwjtkU',
+  'accept-language' => 'vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost:18080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-mobile' => '?0',
+  'token' => 'f941fe7bb827035e288b3e9bf8eb7b6d',
+  'content-type' => 'application/json',
+  'sec-ch-ua' => '"Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:18080',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003333s ] mysql:host=likeshop-mysql;port=3306;dbname=likeshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_cart` [ RunTime:0.011518s ]
+[ sql ] [ SQL ] SELECT SUM(`goods_num`) AS tp_sum FROM `ls_cart` `c` INNER JOIN `ls_goods` `g` ON `g`.`id`=`c`.`goods_id` INNER JOIN `ls_goods_item` `i` ON `i`.`id`=`c`.`item_id` WHERE  `c`.`user_id` = 1 [ RunTime:0.004240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_stat` [ RunTime:0.003928s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_stat` WHERE  `ip` = '172.18.0.1'  AND `create_time` BETWEEN 1766332800 AND 1766419199 LIMIT 1 [ RunTime:0.001184s ]
+[ sql ] [ SQL ] UPDATE `ls_stat`  SET `count` = `count` + 1  WHERE  `id` = 8 [ RunTime:0.006164s ]
