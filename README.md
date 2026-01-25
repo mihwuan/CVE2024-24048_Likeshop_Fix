@@ -1,6 +1,6 @@
 # CVE2024-24048_Likeshop_Fix
 
-## Môn học: Bảo mật web và ứng dụng (NT213.Q12.ANTT)
+## Môn học: Bảo mật web và ứng dụng (NT213.Q12.ANTT) - Nhóm 3
 
 ### Thành viên thực hiện
 
