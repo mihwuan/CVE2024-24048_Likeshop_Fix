@@ -1,0 +1,11 @@
+POST /api/user/setWechatInfo HTTP/1.1
+Host: 52.184.86.67
+Content-Type: application/json
+token: 2d8927a4a3a982b3c31bbc37d25102ad
+Connection: close
+
+{
+  "nickname": "lekhoi",
+  "avatar": "SSRF",
+  "sex": 1
+}
